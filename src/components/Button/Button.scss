@@ -1,4 +1,4 @@
-.button {
+.button-default {
   display: flex;
   max-width: fit-content;
   max-height: fit-content;
@@ -23,10 +23,4 @@
     background: var(--color-first-300);
     color: var(--color-base-white);
   }
-}
-
-.plus {
-  padding: 8px;
-  display: flex;
-  align-items: center;
 }

@@ -1,0 +1,39 @@
+.button-plus {
+  display: flex;
+  max-width: fit-content;
+  max-height: fit-content;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  cursor: pointer;
+  border: 3px solid var(--color-base-white);
+  border-radius: 32px;
+  background: var(--color-base-white);
+  color: var(--color-first-700);
+  transition: border 0.3s ease-in-out, background 0.3s step-start,
+    color 0.3s step-start;
+
+  &:hover {
+    border: 3px solid var(--color-first-300);
+    background: var(--color-gray-100);
+  }
+
+  // &:active {
+  //
+  //   border: 3px solid var(--color-first-300);
+  //   background: var(--color-first-300);
+  //   color: var(--color-base-white);
+  // }
+
+  &.active {
+    border: 3px solid var(--color-first-300); /* или другой синий из палитры */
+    background: var(--color-first-300);
+    color: var(--color-base-white);
+
+    &:hover {
+      transition: border 0.3s ease-in-out, background 0.3s ease-in-out, color 0.3s ease-in-out;
+      border: 3px solid var(--color-first-300);
+      background: var(--color-first-500);
+    }
+  }
+}
