@@ -5,7 +5,7 @@ import { DefaultButton } from "@/components/Button/buttons.js";
 
 export default function Banner() {
   return (
-    <div className="banner">
+    <section className="banner">
       <div className="banner-container">
         <div className="banner-text">
           <h1>
@@ -28,6 +28,6 @@ export default function Banner() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,0 +1,19 @@
+.user-container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  padding-bottom: 32px;
+
+  .userId {
+    display: flex;
+    padding: 0px 20px;
+    border-radius: 16px;
+    color: var(--color-first-700);
+    background-color: var(--color-first-100);
+  }
+
+  .stepText {
+    max-width: 338px
+  }
+}
