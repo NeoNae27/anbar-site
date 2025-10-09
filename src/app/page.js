@@ -1,19 +1,14 @@
-import Image from "next/image";
-import Button from "@/components/Button/Button.jsx";
-import PlusButton from "@/components/Button/PlusButton/PlusButton.jsx";
+import { DefaultButton, PlusButton } from "@/components/Button/buttons.js";
+import Header from "@/layout/Header/Header.jsx";
+import "./style.css"
 
 export default function Page() {
   return (
     <>
-      <PlusButton></PlusButton>
-      <Button label="Label" size="buttonLarge"></Button>
-      <h1>Hi</h1>
-      <Image
-        src={"/logo/logo-text-color.svg"}
-        alt="None"
-        width="64"
-        height="64"
-      ></Image>
+      <Header></Header>
+      {/* <PlusButton></PlusButton>
+      <DefaultButton label="Label" size="buttonLarge"></DefaultButton>
+      <h1>Hi</h1> */}
     </>
   );
 }

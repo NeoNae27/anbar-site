@@ -16,7 +16,6 @@ export default function DefaultButton({ label, size, href, click }) {
     console.log("Button clicked");
   };
 
-
   if (href) {
     return (
       <Link href={href}>

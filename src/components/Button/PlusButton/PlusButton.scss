@@ -18,20 +18,14 @@
     background: var(--color-gray-100);
   }
 
-  // &:active {
-  //
-  //   border: 3px solid var(--color-first-300);
-  //   background: var(--color-first-300);
-  //   color: var(--color-base-white);
-  // }
-
   &.active {
-    border: 3px solid var(--color-first-300); /* или другой синий из палитры */
+    transition: border 0.3s ease-in-out, background 0.3s ease-in-out,
+      color 0.3s ease-in-out;
+    border: 3px solid var(--color-first-300);
     background: var(--color-first-300);
     color: var(--color-base-white);
 
     &:hover {
-      transition: border 0.3s ease-in-out, background 0.3s ease-in-out, color 0.3s ease-in-out;
       border: 3px solid var(--color-first-300);
       background: var(--color-first-500);
     }
