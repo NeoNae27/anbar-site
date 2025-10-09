@@ -1,0 +1,12 @@
+.button {
+  display: flex;
+  max-width: fit-content;
+  max-height: fit-content;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 64px;
+  cursor: pointer;
+  border: none;
+  border-radius: 32px;
+  background-color: var(--color-primary-700);
+}
