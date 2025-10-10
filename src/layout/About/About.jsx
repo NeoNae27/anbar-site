@@ -38,7 +38,7 @@ export default function About() {
         </div>
         <div className="userJourney">
           <h4>Bu necə işləyir?</h4>
-          <ul>
+          <ul >
             {UserJourneySteps.map((step) => (
               <li key={step.id}>
                 <UserJourney id={step.id} text={step.text}></UserJourney>

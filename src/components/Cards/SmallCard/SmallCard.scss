@@ -1,0 +1,55 @@
+.smallCard-container {
+  display: flex;
+  //   gap: 51px;
+  justify-content: space-between;
+  flex-direction: row;
+  border: 2px var(--color-gray-300) solid;
+  border-radius: 16px;
+  width: 298px;
+  height: 148px;
+  gap: 16px;
+
+  background-color: var(--color-base-white);
+  padding: 24px;
+
+  transition: border 0.3s ease-in-out, background 0.3s step-start,
+    color 0.3s step-start;
+
+  .smallCard-header {
+    width: 48px;
+    height: 48px;
+    display: flex;
+  }
+
+  .smallCard-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4px;
+    max-width: 181px;
+
+    .body2 {
+      color: var(--color-gray-400);
+      display: -webkit-box;
+      -webkit-line-clamp: 2; // число строк (например, 2)
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  .icon {
+    transition: border 0.3s ease-in-out, background 0.3s step-start,
+      color 0.3s step-start;
+    border-radius: 4.8px;
+    border: 2px var(--color-first-100) solid;
+  }
+
+  &:hover {
+    border: 2px var(--color-first-300) solid;
+    cursor: pointer;
+
+    .icon {
+      border: 2px var(--color-first-300) solid;
+    }
+  }
+}

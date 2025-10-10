@@ -24,7 +24,7 @@ export default function Banner() {
             layout="fill"
             objectFit="cover"
             objectPosition="bottom"
-            priority
+            unoptimized 
           />
         </div>
       </div>

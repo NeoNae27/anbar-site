@@ -10,6 +10,7 @@ export default function Page() {
       <Header></Header>
       <Banner></Banner>
       <About></About>
+      
       {/* <PlusButton></PlusButton>
       <DefaultButton label="Label" size="buttonLarge"></DefaultButton>
       <h1>Hi</h1> */}
