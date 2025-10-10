@@ -1,8 +1,8 @@
 import Image from "next/image";
 import SmallCard from "@/components/Cards/SmallCard/SmallCard";
-import "./ContainerSpecification.scss";
+import "./ContainerSpecs.scss";
 
-export default function ContainerSpecification() {
+export default function ContainerSpecs() {
   const ContainerSpecList = [
     {
       icon: "/icons/container/camera.svg",
