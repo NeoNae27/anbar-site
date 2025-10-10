@@ -1,0 +1,29 @@
+.advantages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px;
+  background-color: var(--color-first-100);
+
+  .advantages-container {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    flex-direction: column;
+    padding: 40px 0px;
+    gap: 32px;
+    justify-content: space-between;
+
+    h2 {
+        padding-left: 40px;
+    }
+
+    .advantages-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

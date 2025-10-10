@@ -2,6 +2,8 @@ import { DefaultButton, PlusButton } from "@/components/Button/buttons.js";
 import Header from "@/layout/Header/Header.jsx";
 import Banner from "@/layout/Banner/Banner.jsx";
 import About from "@/layout/About/About.jsx";
+import Advantages from "@/layout/Advantages/Advantages.jsx";
+import ContainerSpecification from "@/layout/ContainerSpecifications/ContainerSpecification";
 import "./style.css";
 
 export default function Page() {
@@ -10,10 +12,8 @@ export default function Page() {
       <Header></Header>
       <Banner></Banner>
       <About></About>
-      
-      {/* <PlusButton></PlusButton>
-      <DefaultButton label="Label" size="buttonLarge"></DefaultButton>
-      <h1>Hi</h1> */}
+      <Advantages></Advantages>
+      <ContainerSpecification></ContainerSpecification>
     </>
   );
 }
