@@ -1,0 +1,34 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-first-100);
+
+  .contacts-container {
+    display: flex;
+    flex-direction: row;
+    padding: 80px 120px;
+    width: 100%;
+    gap: 140px;
+
+    .contacts-info {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .contacts-address {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .info-element {
+        display: flex;
+        flex-direction: row;
+        max-width: 300px;
+        gap: 16px;
+        align-items: center;
+        color: var(--color-gray-400);
+      }
+    }
+  }
+}

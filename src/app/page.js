@@ -5,6 +5,7 @@ import About from "@/layout/About/About.jsx";
 import Advantages from "@/layout/Advantages/Advantages.jsx";
 import ContainerSpecification from "@/layout/ContainerSpecifications/ContainerSpecification";
 import FrequentlyQuestions from "@/layout/FrequentlyQuestions/FrequentlyQuestions";
+import Contacts from "@/layout/Contacts/Contacts.jsx";
 import "./style.css";
 
 export default function Page() {
@@ -16,6 +17,7 @@ export default function Page() {
       <Advantages></Advantages>
       <ContainerSpecification></ContainerSpecification>
       <FrequentlyQuestions></FrequentlyQuestions>
+      <Contacts></Contacts>
     </>
   );
 }
