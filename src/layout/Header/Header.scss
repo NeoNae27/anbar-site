@@ -4,7 +4,7 @@
   background-color: var(--color-first-100);
   align-items: center;
   justify-content: space-around;
-  padding: 32px 40px;
+  padding: 32px 80px;
 
   contain: layout style;
 
@@ -14,9 +14,10 @@
   }
 
   @media (max-width: 375px) {
-    justify-content: center;
-    height: auto;
-    padding: 16px;
+    display: none;
+    // justify-content: center;
+    // height: auto;
+    // padding: 16px;
   }
 
   &__container {

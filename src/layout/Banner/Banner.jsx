@@ -5,7 +5,10 @@ import { DefaultButton } from "@/components/Button/buttons.js";
 
 export default function Banner() {
   return (
-    <section className="banner">
+    <section
+      className="banner"
+      aria-label="Əsas banner - konteyner anbarının icarəsi"
+    >
       <div className="banner-container">
         <div className="banner-text">
           <h1>
@@ -15,16 +18,26 @@ export default function Banner() {
               Anbarlar
             </span>
           </h1>
-          <DefaultButton label="Əlaqə" size="buttonLarge"></DefaultButton>
+          <DefaultButton
+            label="Əlaqə"
+            size="buttonLarge"
+            title="Əlaqə forması vasitəsilə bizimlə əlaqə saxlayın"
+            aria-label="Bizimlə əlaqə saxlayın"
+          ></DefaultButton>
         </div>
-        <div className="banner-img-wrapper">
+        <div
+          className="banner-img-wrapper"
+          role="img"
+          aria-label="Konteyner anbarları"
+        >
           <Image
-            src="/imgs/ContainersImg.png"
+            src="/imgs/BannerContainersImgs/ContainersImg-Desktop.png"
             alt="Containers"
             layout="fill"
             objectFit="cover"
             objectPosition="bottom"
-            unoptimized 
+            unoptimized
+            priority
           />
         </div>
       </div>
