@@ -9,8 +9,8 @@ export default function Banner() {
       className="banner"
       aria-label="Əsas banner - konteyner anbarının icarəsi"
     >
-      <div className="banner-container">
-        <div className="banner-text">
+      <div className="banner__container">
+        <div className="banner__container-text">
           <h1>
             <span>
               Kirayə Konteyner
@@ -26,7 +26,7 @@ export default function Banner() {
           ></DefaultButton>
         </div>
         <div
-          className="banner-img-wrapper"
+          className="banner__container-img-wrapper"
           role="img"
           aria-label="Konteyner anbarları"
         >
