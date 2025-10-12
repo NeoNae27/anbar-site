@@ -1,10 +1,12 @@
-.user-container {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  align-items: center;
-
-  .userId {
+.user {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+  }
+  
+  &__Id {
     display: flex;
     padding: 0px 20px;
     border-radius: 16px;
@@ -12,7 +14,7 @@
     background-color: var(--color-first-100);
   }
 
-  .stepText {
-    max-width: 338px
+  &__stepText {
+    max-width: 338px;
   }
 }
