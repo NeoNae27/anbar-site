@@ -19,8 +19,8 @@ export default function About() {
 
   return (
     <section className="about">
-      <div className="about-container">
-        <div className="description">
+      <div className="about__container">
+        <div className="about__description">
           <h4>Biz kimik?</h4>
           <p className="body1">
             Sizə rahat, etibarlı və sərfəli saxlama həlləri təqdim edən fərdi
@@ -36,9 +36,9 @@ export default function About() {
             seçək!
           </p>
         </div>
-        <div className="userJourney">
+        <div className="about__userJourney">
           <h4>Bu necə işləyir?</h4>
-          <ul >
+          <ul>
             {UserJourneySteps.map((step) => (
               <li key={step.id}>
                 <UserJourney id={step.id} text={step.text}></UserJourney>
