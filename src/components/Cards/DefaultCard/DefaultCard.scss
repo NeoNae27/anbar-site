@@ -1,46 +1,48 @@
-.card-container {
-  display: flex;
-  //   gap: 51px;
-  justify-content: space-between;
-  flex-direction: column;
-  border: 2px var(--color-gray-300) solid;
-  border-radius: 16px;
-  width: 298px;
-  height: 270px;
-
-  background-color: var(--color-base-white);
-  padding: 24px;
-
-  transition: border 0.3s ease-in-out, background 0.3s step-start,
-    color 0.3s step-start;
-
-  .card-header {
-  }
-
-  .card-body {
+.card {
+  &__container {
     display: flex;
-    flex-direction: column;
-    gap: 4px;
 
-    .body2 {
-      color: var(--color-gray-400);
+    gap: 32px;
+    flex-direction: column;
+    border: 2px var(--color-gray-300) solid;
+    border-radius: 16px;
+    width: 298px;
+    height: 270px;
+    background-color: var(--color-base-white);
+    padding: 24px;
+    transition: border 0.3s ease-in-out, background 0.3s step-start,
+      color 0.3s step-start;
+
+    @media (max-width: 1280px) {
+      width: 285px;
+      height: 230px;
     }
   }
 
-  .icon {
+  &__icon {
     transition: border 0.3s ease-in-out, background 0.3s step-start,
       color 0.3s step-start;
     border-radius: 16px;
     border: 2px var(--color-first-100) solid;
+
+    @media (max-width: 1280px) {
+      width: 60px;
+      height: 60px;
+    }
   }
 
-  &:hover {
-    border: 2px var(--color-first-300) solid;
-    cursor: pointer;
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
 
-    .icon {
-      border-radius: 16px;
-      border: 2px var(--color-first-300) solid;
+    .body2 {
+      color: var(--color-gray-400);
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
   }
 }

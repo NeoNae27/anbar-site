@@ -16,25 +16,25 @@ export default function DefaultCard({
   const handleCardClick = (e) => {
     console.log("Card clicked");
   };
-
+  
   // TODO: Add onClick to open PopupComponent
 
   return (
     <span
-      className="card-container"
+      className="card__container"
       onClick={PopupComponent ?? handleCardClick}
     >
-      <span className="card-header">
+      <span className="card__header">
         <Image
           src={icon}
           alt={icon}
           width={80}
           height={80}
-          className="icon"
+          className="card__icon"
           unoptimized
         ></Image>
       </span>
-      <span className="card-body">
+      <span className="card__body">
         <p className="subtitle1">{title}</p>
         <p className="body2">{description}</p>
       </span>
