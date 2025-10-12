@@ -5,13 +5,19 @@
     gap: 24px;
     align-items: center;
   }
-  
+
   &__Id {
     display: flex;
+    width: 64px;
+    height: 64px;
     padding: 0px 20px;
     border-radius: 16px;
     color: var(--color-first-700);
     background-color: var(--color-first-100);
+
+    font-size: 3rem; // 48px
+    line-height: 4rem; // 64px
+    font-weight: 600;
   }
 
   &__stepText {
