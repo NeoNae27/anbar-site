@@ -1,4 +1,4 @@
-import { Header, Banner } from "@/layout/layout.js"
+import { Header, Banner, About, Advantages } from "@/layout/layout.js"
 import "./style.css";
 
 export default function Page() {
@@ -6,6 +6,8 @@ export default function Page() {
     <>
       <Header></Header>
       <Banner></Banner>
+      <About></About>
+      <Advantages></Advantages>
     </>
   );
 }
