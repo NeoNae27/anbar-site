@@ -1,7 +1,6 @@
 .card {
   &__container {
     display: flex;
-
     gap: 32px;
     flex-direction: column;
     border: 2px var(--color-gray-300) solid;
@@ -16,6 +15,10 @@
     @media (max-width: 1280px) {
       width: 285px;
       height: 230px;
+    }
+
+    @media (min-width: 375px) {
+       flex: 0 0 auto;
     }
   }
 

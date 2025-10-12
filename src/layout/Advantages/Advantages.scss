@@ -4,26 +4,66 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding: 40px;
+  padding: 80px 40px;
   background-color: var(--color-first-100);
 
-  .advantages-container {
+  @media (max-width: 652px) {
+    padding: 0px 32px 64px;
+  }
+
+  // For x scroll without clipping
+  @media (width < 652px) {
+    padding: 0px;
+    padding-left: 32px;
+    gap: 0px;
+    padding-bottom: 32px;
+  }
+
+  &__container {
     display: flex;
     width: 100%;
+    gap: 32px;
     max-width: 1280px;
     flex-direction: column;
-    padding: 40px 0px;
-    gap: 32px;
     justify-content: space-between;
+  }
 
-    h2 {
-        padding-left: 40px;
+  &__header {
+    @media (max-width: 652px) {
+      padding: 64px 32px 0px 0px;
     }
 
-    .advantages-cards {
+    h2 {
+      @media (max-width: 652px) {
+        font-size: 2rem; // 32px
+        line-height: 3.25rem; // 52px
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (width <= 1280px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 24px;
+      width: fit-content;
+    }
+
+    @media (width < 652px) {
+      width: 100%;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      scroll-snap-type: x mandatory;
+      overflow: scroll;
+      gap: 24px;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
     }
   }
 }

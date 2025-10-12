@@ -9,6 +9,7 @@ export default function Banner() {
     <section
       className="banner"
       aria-label="Əsas banner - konteyner anbarının icarəsi"
+      role="region"
     >
       <div className="banner__container">
         <div className="banner__container-text">
