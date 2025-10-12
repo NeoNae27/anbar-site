@@ -21,7 +21,7 @@ export default function Banner() {
           </h1>
           <DefaultButton
             label="Əlaqə"
-            size={window.innerWidth > 375 ? "button-lg" : "button-md"}
+            size={"button-lg"}
             title="Əlaqə forması vasitəsilə bizimlə əlaqə saxlayın"
             aria-label="Bizimlə əlaqə saxlayın"
           ></DefaultButton>
