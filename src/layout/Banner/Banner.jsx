@@ -1,3 +1,4 @@
+"use client";
 import "./Banner.scss";
 import Image from "next/image";
 
@@ -20,7 +21,7 @@ export default function Banner() {
           </h1>
           <DefaultButton
             label="Əlaqə"
-            size="buttonLarge"
+            size={window.innerWidth > 375 ? "button-lg" : "button-md"}
             title="Əlaqə forması vasitəsilə bizimlə əlaqə saxlayın"
             aria-label="Bizimlə əlaqə saxlayın"
           ></DefaultButton>
