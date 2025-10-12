@@ -19,7 +19,7 @@ export default function DefaultButton({ label, size, href, click }) {
   if (href) {
     return (
       <Link href={href}>
-        <a className={classNames("button-default", size)}>{buttonContent}</a>
+        <a className={classNames("button__default", size)}>{buttonContent}</a>
       </Link>
     );
   }
@@ -27,7 +27,7 @@ export default function DefaultButton({ label, size, href, click }) {
   return (
     <button
       onClick={click ?? handleDefaultClick}
-      className={classNames("button-default", [size])}
+      className={classNames("button__default", [size])}
     >
       {label}
     </button>
