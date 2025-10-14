@@ -18,6 +18,10 @@
     flex-direction: row;
     padding: 16px;
     gap: 16px;
+
+    @media (width < 652px) {
+      width: 282px;
+    }
   }
 
   &__icon {
