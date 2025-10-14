@@ -6,8 +6,8 @@ import Image from "next/image";
 export default function Contacts() {
   return (
     <section className="contacts">
-      <div className="contacts-container">
-        <div className="contacts-map">
+      <div className="contacts__container">
+        <div className="contacts__map">
           <Image
             src="/imgs/map.png"
             alt="map"
@@ -16,9 +16,9 @@ export default function Contacts() {
             unoptimized
           />
         </div>
-        <div className="contacts-info">
-          <div className="contacts-address">
-            <h4 className="contacts-info-title">Rəsmi Məlumatlar</h4>
+        <div className="contacts__info">
+          <div className="contacts__address">
+            <h4 className="contacts__info-title">Rəsmi Məlumatlar</h4>
             <div className="info-element">
               <Image
                 src="/icons/addres.svg"
@@ -42,8 +42,8 @@ export default function Contacts() {
               <p className="info-text body1">+994554441212</p>
             </div>
           </div>
-          <div className="contacts-address">
-            <h4 className="contacts-info-title">Open Hoursr</h4>
+          <div className="contacts__address">
+            <h4 className="contacts__info-title">Open Hoursr</h4>
             <div className="info-element">
               <Image
                 src="/icons/time.svg"

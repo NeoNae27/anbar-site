@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer>
-      <div className="footer-container">
+      <div className="footer__container">
         <Image
           src="/logo/logo-text-mono.svg"
           alt="Logo"

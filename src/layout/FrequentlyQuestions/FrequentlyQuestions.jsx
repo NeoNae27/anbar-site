@@ -27,10 +27,6 @@ export default function FrequentlyQuestions() {
     },
   ];
 
-  const handleToggle = (idx) => {
-    setOpenIndex(idx === openIndex ? -1 : idx); // закрыть, если щелкнули по открытому
-  };
-
   return (
     <section className="FQ" aria-labelledby="fq-title">
       <div className="FQ__container">
