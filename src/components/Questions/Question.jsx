@@ -1,16 +1,35 @@
-'use client'
-import "./Question.scss"
-import PlusButton from "@/components/Button/PlusButton/PlusButton.jsx"
-
-// TODO: transfer to template
+"use client";
+import "./Question.scss";
+import React, { useState } from "react";
+import PlusButton from "@/components/Button/PlusButton/PlusButton.jsx";
 
 export default function Question({ question, answer }) {
-    return (
-        <div className="question">
-            <span className="question-container">
-                <h6 className="question-text">{question}</h6>
-                <PlusButton></PlusButton>
-            </span>
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
+
+  return (
+    <div className={`question${isOpen ? " question--open" : ""}`}>
+      <span
+        className="question__container"
+        onClick={toggle}
+        aria-expanded={isOpen}
+        aria-controls="answer-content"
+      >
+        <h6 className="question__text">{question}</h6>
+        <PlusButton isOpen={isOpen}></PlusButton>
+      </span>
+      {isOpen && (
+        <div
+          id="answer-content"
+          className="question__answer"
+          role="region"
+          aria-live="polite"
+        >
+          <h4 className="question__answer-title">The answer is</h4>
+          <p className="question__answer-text body1">{answer}</p>
         </div>
-    )
+      )}
+    </div>
+  );
 }

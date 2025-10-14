@@ -1,7 +1,7 @@
 .button-plus {
   display: flex;
-  width: fit-content;
-  height: fit-content;
+  width: 40px;
+  height: 40px;
   align-items: center;
   justify-content: center;
   padding: 8px;
@@ -22,7 +22,7 @@
     transition: border 0.3s ease-in-out, background 0.3s ease-in-out,
       color 0.3s ease-in-out;
     border: 3px solid var(--color-first-300);
-    background: var(--color-first-300);
+    // background: var(--color-first-300);
     color: var(--color-base-white);
 
     &:hover {

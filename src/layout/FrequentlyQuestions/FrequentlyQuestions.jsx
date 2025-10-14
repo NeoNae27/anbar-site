@@ -1,3 +1,4 @@
+"use client";
 import "./FrequentlyQuestion.scss";
 import Question from "@/components/Questions/Question.jsx";
 import Image from "next/image";
@@ -26,31 +27,35 @@ export default function FrequentlyQuestions() {
     },
   ];
 
+  const handleToggle = (idx) => {
+    setOpenIndex(idx === openIndex ? -1 : idx); // закрыть, если щелкнули по открытому
+  };
+
   return (
-    <div className="FQ">
-      <span className="FQ-container">
-        <div className="FQ-questions">
-          <h2 className="FQ-title">Frequently Asked Questions</h2>
-          <div className="FQ-questions-list">
+    <section className="FQ" aria-labelledby="fq-title">
+      <div className="FQ__container">
+        <div className="FQ__questions">
+          <h2 id="fq-title" className="FQ__title">Frequently Asked Questions</h2>
+          <dl className="FQ__questions-list">
             {Questions.map((item, index) => (
               <Question
                 key={index}
                 question={item.question}
                 answer={item.answer}
-              ></Question>
+              />
             ))}
-          </div>
+          </dl>
         </div>
-        <div className="FQ-image">
+        <aside className="FQ__image" aria-label="Frequently Asked Questions illustration">
           <Image
             src="/imgs/forklift.png"
-            alt="Frequently Questions Image"
+            alt="Illustration related to frequently asked questions"
             width={426}
             height={359}
             unoptimized
-          ></Image>
-        </div>
-      </span>
-    </div>
+          />
+        </aside>
+      </div>
+    </section>
   );
 }
