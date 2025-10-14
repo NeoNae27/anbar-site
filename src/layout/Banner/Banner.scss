@@ -15,7 +15,7 @@
 
   @media (max-width: 375px) {
     min-height: 700px;
-    padding:  0px;
+    padding: 0px;
   }
 
   &__container {
@@ -32,6 +32,7 @@
 
     @media (max-width: 375px) {
       border-radius: 0px;
+      padding: 32px;
     }
 
     &-text {

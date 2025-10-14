@@ -18,7 +18,7 @@ export default function About() {
   ];
 
   return (
-    <section className="about">
+    <section className="about" aria-labelledby="about-title">
       <div className="about__container">
         <div className="about__description">
           <h4>Biz kimik?</h4>

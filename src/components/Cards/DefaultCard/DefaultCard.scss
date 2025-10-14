@@ -1,32 +1,51 @@
 .card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 296px;
+  height: 270px;
+  background-color: var(--color-base-white);
+  border: 2px var(--color-gray-300) solid;
+  border-radius: 16px;
+
+  @media (max-width: 1280px) {
+    width: 100%;
+    height: 130px;
+  }
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: 231px;
+  }
+
   &__container {
     display: flex;
-    gap: 32px;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
     flex-direction: column;
-    border: 2px var(--color-gray-300) solid;
-    border-radius: 16px;
-    width: 298px;
-    height: 270px;
-    background-color: var(--color-base-white);
+    // gap: 48px;
     padding: 24px;
-    transition: border 0.3s ease-in-out, background 0.3s step-start,
-      color 0.3s step-start;
 
     @media (max-width: 1280px) {
-      width: 285px;
-      height: 230px;
+      flex-direction: row;
+      gap: 16px;
     }
 
-    @media (min-width: 375px) {
-       flex: 0 0 auto;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+
+    @media (width < 652px) {
+      width: 282px;
     }
   }
 
   &__icon {
-    transition: border 0.3s ease-in-out, background 0.3s step-start,
-      color 0.3s step-start;
     border-radius: 16px;
-    border: 2px var(--color-first-100) solid;
+    width: 80px;
+    height: 80px;
+    // border: 2px var(--color-first-100) solid;
 
     @media (max-width: 1280px) {
       width: 60px;
@@ -37,8 +56,12 @@
   &__body {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 8px;
     width: 100%;
+
+    .subtitle1 {
+      color: var(--color-second-600);
+    }
 
     .body2 {
       color: var(--color-gray-400);

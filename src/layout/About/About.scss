@@ -4,10 +4,14 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding: 160px 40px;
+  padding: 160px 120px;
 
   @media (max-width: 1280px) {
-    padding: 128px 40px;
+    padding: 128px 120px;
+  }
+
+  @media (max-width: 652px) {
+    padding: 128px 72px;
   }
 
   @media (max-width: 375px) {
@@ -19,16 +23,12 @@
     width: 100%;
     max-width: 1280px;
     flex-direction: row;
-    padding: 0px 80px;
+    // padding: 0px 80px;
     justify-content: space-between;
 
     @media (width < 1280px) {
       flex-direction: column;
       gap: 64px;
-    }
-
-    @media (width <= 652px) {
-      padding: 0px 32px;
     }
 
     p {
@@ -51,6 +51,7 @@
       display: flex;
       flex-direction: column;
       gap: 32px;
+
     }
 
     @media (max-width: 375px) {

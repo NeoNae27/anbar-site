@@ -31,9 +31,9 @@ export default function ContainerSpecs() {
   ];
 
   return (
-    <div className="CS">
-      <span className="CS-container">
-        <span className="CSimage-wrapper">
+    <section className="CS" aria-labelledby="ContainerSpecs-title">
+      <span className="CS__container">
+        <span className="CS__image-wrapper">
           <Image
             src="/imgs/ContainerSizeImg.png"
             alt="Container Specification"
@@ -42,16 +42,16 @@ export default function ContainerSpecs() {
             height={508}
           />
         </span>
-        <span className="CS-text">
-          <span className="CS-header">
-            <h4 className="CS-title">Container Specifications</h4>
-            <p className="CS-description body1">
+        <span className="CS__text">
+          <header className="CS__header">
+            <h4 className="CS__title">Container Specifications</h4>
+            <p className="CS__description body1">
               Sizə rahat, etibarlı və sərfəli saxlama həlləri təqdim edən fərdi
               konteyner anbarlarımızla xidmətinizdəyik!
             </p>
-          </span>
+          </header>
 
-          <span className="CS-cards">
+          <span className="CS__cards">
             {ContainerSpecList.map((spec) => (
               <SmallCard
                 key={spec.title}
@@ -63,6 +63,6 @@ export default function ContainerSpecs() {
           </span>
         </span>
       </span>
-    </div>
+    </section>
   );
 }

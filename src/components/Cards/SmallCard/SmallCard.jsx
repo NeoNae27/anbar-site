@@ -22,24 +22,26 @@ export default function SmallCard({
   // TODO: Add onClick to open PopupComponent
 
   return (
-    <span
-      className="smallCard-container"
+    <div className="smallCard">
+      <span
+      className="smallCard__container"
       onClick={PopupComponent ?? handleCardClick}
     >
-      <span className="smallCard-header">
+      <span className="smallCard__header">
         <Image
           src={icon}
           alt={icon}
           width={48}
           height={48}
-          className="icon"
+          className="smallCard__icon"
           unoptimized
         ></Image>
       </span>
-      <span className="smallCard-body">
+      <span className="smallCard__body">
         <p className="subtitle1">{title}</p>
         <p className="body2">{description}</p>
       </span>
     </span>
+    </div>
   );
 }

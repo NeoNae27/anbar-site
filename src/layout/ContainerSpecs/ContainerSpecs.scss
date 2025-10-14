@@ -7,7 +7,15 @@
   padding: 40px;
   background-color: var(--color-first-100);
 
-  .CS-container {
+  @media (max-width: 1280px) {
+    padding: 32px 80px;
+  }
+
+  @media (max-width: 652px) {
+    padding: 32px 32px 64px;
+  }
+
+  &__container {
     display: flex;
     width: 100%;
     max-width: 1280px;
@@ -15,30 +23,49 @@
     gap: 32px;
     justify-content: space-between;
 
-    .CS-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    @media (max-width: 1024px) {
+      flex-direction: column-reverse;
     }
+  }
 
-    .CS-header {
-      padding: 0px 16px;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+  }
 
-      .CS-description {
-        max-width: 579px;
-        height: auto;
-      }
-    }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 
-    .CS-cards {
+  &__description {
+    color: var(--color-gray-400);
+  }
+
+  &__description {
+    max-width: 579px;
+    height: auto;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr; // две колонки одинаковой ширины
+    grid-template-rows: 1fr 1fr; // две строки (создаются автоматически, если 4 элемента)
+    gap: 24px; // расстояние между карточками
+    width: 100%;
+    // при необходимости ограничь max-width
+    // max-width: 900px;
+    // margin: 0 auto;
+
+    @media (max-width: 1280px) {
       display: grid;
-      grid-template-columns: 1fr 1fr; // две колонки одинаковой ширины
-      grid-template-rows: 1fr 1fr; // две строки (создаются автоматически, если 4 элемента)
-      gap: 24px; // расстояние между карточками
       width: 100%;
-      // при необходимости ограничь max-width
-      // max-width: 900px;
-      // margin: 0 auto;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 24px;
     }
   }
 }
