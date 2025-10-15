@@ -1,9 +1,14 @@
+/** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production';
-const repo = 'anbar.al-site';
+const repoName = 'your-repo-name'; // ЗАМЕНИТЕ НА ИМЯ ВАШЕГО РЕПОЗИТОРИЯ
 
-module.exports = {
-  basePath: isProd ? `/${repo}` : '',
-  assetPrefix: isProd ? `/${repo}/` : '',
-  images: { unoptimized: true },
+const nextConfig = {
+  basePath: isProd ? `/${repoName}` : '',
+  assetPrefix: isProd ? `/${repoName}/` : '',
+  images: {
+    unoptimized: true,
+  },
   output: 'export',
 };
+
+export default nextConfig;
