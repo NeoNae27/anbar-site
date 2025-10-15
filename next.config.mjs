@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production';
-const repoName = 'your-repo-name'; // ЗАМЕНИТЕ НА ИМЯ ВАШЕГО РЕПОЗИТОРИЯ
+const repoName = 'anbar.al-site'; // 
 
 const nextConfig = {
   basePath: isProd ? `/${repoName}` : '',
