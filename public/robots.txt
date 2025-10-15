@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://anbar.al
+
+# Sitemaps
+Sitemap: https://anbar.al/sitemap.xml

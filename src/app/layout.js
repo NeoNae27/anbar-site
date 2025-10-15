@@ -5,8 +5,9 @@ import { Metadata } from 'next'
 export const metadata = {
   title: 'Anbar.al - Anbar icarəsi',
   description: 'Anbar icarəsi, anbar kirayəsi, anbar icarə xidmətləri',
-  keywords: ['Anbar icarəsi', 'kirayə', 'xidmətlər'],
+  keywords: ['Anbar icarəsi', 'kirayə', 'xidmətlər', 'Baki', "container", "storage", "rent", "warehouse"],
   robots: 'index, follow',
+  googlebot: "index, follow",
   canonical: 'https://anbar.al',
   openGraph: {
     title: 'Anbar.al - Anbar icarəsi',
