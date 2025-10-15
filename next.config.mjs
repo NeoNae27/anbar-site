@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production';
-const repoName = 'anbar.al-site';
+const repoName = 'anbar-site';
 
 const nextConfig = {
   basePath: isProd ? `/${repoName}` : '',
