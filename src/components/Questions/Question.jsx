@@ -9,8 +9,9 @@ export default function Question({ question, answer }) {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className={`question${isOpen ? " question--open" : ""}`}>
+    <div className={`question${isOpen ? " question--open" : ""}`} role="listitem">
       <span
+        role="button"
         className="question__container"
         onClick={toggle}
         aria-expanded={isOpen}
@@ -27,7 +28,7 @@ export default function Question({ question, answer }) {
           aria-live="polite"
         >
           <h4 className="question__answer-title">The answer is</h4>
-          <p className="question__answer-text body1">{answer}</p>
+          <dd><p className="question__answer-text body1">{answer}</p></dd>
         </div>
       )}
     </div>

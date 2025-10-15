@@ -30,6 +30,7 @@ export default function PlusButton({ PopupComponent, isOpen }) {
     <>
       <button
         // onClick={togglePopup}
+        aria-label="Show answer"
         className={classNames("button-plus", { active: isOpen })}
       >
         {isOpen ? <MinusIcon /> : <PlusIcon />}

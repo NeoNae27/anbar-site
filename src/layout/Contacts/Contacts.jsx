@@ -5,20 +5,20 @@ import Image from "next/image";
 
 export default function Contacts() {
   return (
-    <section className="contacts">
+    <section className="contacts" aria-labelledby="contacts-title" role="region">
       <div className="contacts__container">
         <div className="contacts__map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3355.935811621989!2d49.760321!3d40.299592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDE3JzU4LjUiTiA0OcKwNDUnMzcuMiJF!5e1!3m2!1sen!2sru!4v1760549307871!5m2!1sen!2sru"
             width="100%"
-            
+            title="Map location of the company"
             height="413"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div className="contacts__info">
+        <section className="contacts__info">
           <div className="contacts__address">
             <h4 className="contacts__info-title">Rəsmi Məlumatlar</h4>
             <div className="info-element">
@@ -29,9 +29,9 @@ export default function Contacts() {
                 height={48}
                 unoptimized
               ></Image>
-              <p className="info-text body1">
+              <address className="info-text body1">
                 Bakı şəhəri, Qaradağ rayonu, Bakı – Salyan şossesi, 15 km
-              </p>
+              </address>
             </div>
             <div className="info-element">
               <Image
@@ -54,12 +54,12 @@ export default function Contacts() {
                 height={48}
                 unoptimized
               ></Image>
-              <p className="info-text body1">
+              <time className="info-text body1">
                 Bazar ertəsi- Şənbə: 08:00 – 18:00
-              </p>
+              </time>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </section>
   );

@@ -28,11 +28,13 @@ export default function FrequentlyQuestions() {
   ];
 
   return (
-    <section className="FQ" aria-labelledby="fq-title">
+    <section className="FQ" aria-labelledby="fq-title" role="region">
       <div className="FQ__container">
         <div className="FQ__questions">
-          <h2 id="fq-title" className="FQ__title">Frequently Asked Questions</h2>
-          <dl className="FQ__questions-list">
+          <h2 id="fq-title" className="FQ__title">
+            Frequently Asked Questions
+          </h2>
+          <dl className="FQ__questions-list" role="list">
             {Questions.map((item, index) => (
               <Question
                 key={index}
@@ -42,8 +44,12 @@ export default function FrequentlyQuestions() {
             ))}
           </dl>
         </div>
-        <aside className="FQ__image" aria-label="Frequently Asked Questions illustration">
+        <aside
+          className="FQ__image"
+          aria-label="Frequently Asked Questions illustration"
+        >
           <Image
+            role="img"
             src="/imgs/forklift.png"
             alt="Illustration related to frequently asked questions"
             width={426}

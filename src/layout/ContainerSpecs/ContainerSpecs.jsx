@@ -31,7 +31,7 @@ export default function ContainerSpecs() {
   ];
 
   return (
-    <section className="CS" aria-labelledby="ContainerSpecs-title">
+    <section className="CS" aria-labelledby="ContainerSpecs-title" role="region">
       <span className="CS__container">
         <span className="CS__image-wrapper">
           <Image

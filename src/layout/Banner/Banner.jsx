@@ -11,7 +11,7 @@ export default function Banner() {
       aria-label="Əsas banner - konteyner anbarının icarəsi"
       role="region"
     >
-      <div className="banner__container">
+      <section className="banner__container">
         <div className="banner__container-text">
           <h1>
             <span>
@@ -42,7 +42,7 @@ export default function Banner() {
             priority
           />
         </div>
-      </div>
+      </section>
     </section>
   );
 }

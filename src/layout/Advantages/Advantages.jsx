@@ -38,12 +38,12 @@ export default function Advantages() {
   ];
 
   return (
-    <section className="advantages" aria-labelledby="advantages-title">
+    <section className="advantages" aria-labelledby="advantages-title" role="region">
       <div className="advantages__container">
         <header className="advantages__header">
           <h2 className="advantages__title">Üstünlüklərimiz</h2>
         </header>
-        <div className="advantages__cards">
+        <ul className="advantages__cards">
           {AdvantagesList.map((advantage) => (
             <DefaultCard
               key={advantage.title}
@@ -54,7 +54,7 @@ export default function Advantages() {
               description={advantage.description}
             ></DefaultCard>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );

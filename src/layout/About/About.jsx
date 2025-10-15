@@ -18,9 +18,9 @@ export default function About() {
   ];
 
   return (
-    <section className="about" aria-labelledby="about-title">
+    <section className="about" aria-labelledby="about-title" role="landmark">
       <div className="about__container">
-        <div className="about__description">
+        <article className="about__description" role="article">
           <h4>Biz kimik?</h4>
           <p className="body1">
             Sizə rahat, etibarlı və sərfəli saxlama həlləri təqdim edən fərdi
@@ -35,8 +35,8 @@ export default function About() {
             əlaqə saxlayın və sizin üçün ən uyğun saxlama həllini birlikdə
             seçək!
           </p>
-        </div>
-        <div className="about__userJourney">
+        </article>
+        <article className="about__userJourney"  role="article">
           <h4>Bu necə işləyir?</h4>
           <ul>
             {UserJourneySteps.map((step) => (
@@ -45,7 +45,7 @@ export default function About() {
               </li>
             ))}
           </ul>
-        </div>
+        </article>
       </div>
     </section>
   );
