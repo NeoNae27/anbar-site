@@ -5,12 +5,13 @@
   justify-content: space-around;
   padding: 32px 80px;
   contain: layout style;
+  
 
   @media (max-width: 652px) {
     padding: 24px 32px;
   }
 
-  @media (max-width: 375px) {
+  @media (width < 652px) {
     display: none;
   }
 

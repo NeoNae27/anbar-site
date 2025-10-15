@@ -10,7 +10,7 @@
     padding: 80px 80px;
   }
 
-  @media (width: 375px) {
+  @media (width < 652px) {
     padding: 64px 32px ;
   }
 
