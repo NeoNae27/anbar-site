@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    localPatterns: [
-      {
-        pathname: "/public/imgs/**",
-        search: "",
-      },
-    ],
+    // localPatterns: [
+    //   {
+    //     pathname: "/public/**",
+    //     search: "",
+    //   },
+    // ],
   },
   output: "export",
 };
