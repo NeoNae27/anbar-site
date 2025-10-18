@@ -6,32 +6,44 @@ export default function ContainerSpecs() {
   const ContainerSpecList = [
     {
       icon: "/icons/container/camera.svg",
+      alt: "Camera icon",
+      ariaLabel: "24/7 \n Mühafizə icon",
       title: `24/7 \n Mühafizə`,
       description:
-        "Anbarlarımızın yerləşdiyi məkan xüsusi olaraq əsas magistral yollara yaxınlıq nəzərə alınaraq seçilmişdir",
+        "Konteynerlərin hər biri daimi təhlükəsizlik kameraları və mühafizə ilə müşahidə olunur",
     },
     {
       icon: "/icons/container/fire.svg",
+      alt: "Map icon",
+      ariaLabel: "Yanğın Təhlükəsizliyi icon",
       title: "Yanğın Təhlükəsizliyi",
       description:
-        "Anbarlarımızın yerləşdiyi məkan xüsusi olaraq əsas magistral yollara yaxınlıq nəzərə alınaraq seçilmişdir",
+        "Konteynerlərin hər biri yanğın detektoru ilə təchiz olunub",
     },
     {
       icon: "/icons/container/bulb.svg",
-      title: "Fərdi İşıqlandırma və Elektrik Təchizatı",
+      alt: "Bulb icon",
+      ariaLabel: "İşıqlandırma və Elektrik Təchizatı icon",
+      title: "İşıqlandırma və Elektrik Təchizatı",
       description:
-        "Anbarlarımızın yerləşdiyi məkan xüsusi olaraq əsas magistral yollara yaxınlıq nəzərə alınaraq seçilmişdir",
+        "Hər konteynerin öz işıqlandırması və elektrik yuvası mövcuddur",
     },
     {
       icon: "/icons/container/rain.svg",
-      title: "Nəmişlik və Temp. İzolyasiyası",
+      alt: "Rain icon",
+      ariaLabel: "Nəmişliyə və Temperaturaya Qarşı İzolyasiya icon",
+      title: "Nəmişliyə və Temperaturaya Qarşı İzolyasiya",
       description:
-        "Anbarlarımızın yerləşdiyi məkan xüsusi olaraq əsas magistral yollara yaxınlıq nəzərə alınaraq seçilmişdir",
+        "Konteynerlər mallarınıza zərər gəlməsin üçün izolyasiya olunub",
     },
   ];
 
   return (
-    <section className="CS" aria-labelledby="ContainerSpecs-title" role="region">
+    <section
+      className="CS"
+      aria-labelledby="ContainerSpecs-title"
+      role="region"
+    >
       <span className="CS__container">
         <span className="CS__image-wrapper">
           <Image
@@ -44,7 +56,7 @@ export default function ContainerSpecs() {
         </span>
         <span className="CS__text">
           <header className="CS__header">
-            <h4 className="CS__title">Container Specifications</h4>
+            <h4 className="CS__title">Konteynerlərin xüsusiyyətləri</h4>
             <p className="CS__description body1">
               Sizə rahat, etibarlı və sərfəli saxlama həlləri təqdim edən fərdi
               konteyner anbarlarımızla xidmətinizdəyik!

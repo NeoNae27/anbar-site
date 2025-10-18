@@ -5,15 +5,15 @@ export default function About() {
   const UserJourneySteps = [
     {
       id: 1,
-      text: "Siz saxlama obyektini icarəyə götürmək üçün sorğu göndərirsiniz.",
+      text: "Xidmət üçün müraciətinizi göndərirsiniz",
     },
     {
       id: 2,
-      text: "Sizinlə əlaqə saxlayıb qiyməti təyin edirik",
+      text: "Şərtləri razılaşdırıb, müqavilə imzalayırıq",
     },
     {
       id: 3,
-      text: "Əşyalarınızla təyin olunmuş vaxtda gəlirsiniz. Onları boşaltmağınıza kömək edirik.",
+      text: "Güvənli konteynerlərimizə əşyalarınızı rahatlıqla yerləşdirirsiniz",
     },
   ];
 
@@ -23,10 +23,11 @@ export default function About() {
         <article className="about__description" role="article">
           <h4>Biz kimik?</h4>
           <p className="body1">
-            Sizə rahat, etibarlı və sərfəli saxlama həlləri təqdim edən fərdi
-            konteyner anbarlarımızla xidmətinizdəyik! Əsas magistral yollara
-            çıxışı olan ideal yerləşməmiz və müasir logistika imkanlarımız
-            sayəsində sizin üçün maksimum əlverişli şərait
+            Biz magistral yolun kənarında və şəhərin ən böyük ticarət
+            mərkəzlərinin yaxınlığında yerləşən müasir konteyner anbar xidməti
+            təqdim edirik. Müştərilərimizə rahat, etibarlı və sərfəli saxlama
+            həlləri təklif edərək, əşyalarınız üçün təhlükəsiz və əlverişli
+            mühit yaradırıq
           </p>
           <br />
           <p className="body1">
@@ -36,7 +37,7 @@ export default function About() {
             seçək!
           </p>
         </article>
-        <article className="about__userJourney"  role="article">
+        <article className="about__userJourney" role="article">
           <h4>Bu necə işləyir?</h4>
           <ul>
             {UserJourneySteps.map((step) => (

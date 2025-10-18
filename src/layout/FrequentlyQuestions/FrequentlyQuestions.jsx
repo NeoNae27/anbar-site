@@ -6,24 +6,24 @@ import Image from "next/image";
 export default function FrequentlyQuestions() {
   const Questions = [
     {
-      question: "How to contact with Customer Service?",
+      question: "Mallar necə konteynerə yerləşdirilir və boşaldılır?",
       answer:
-        "Our Customer Service team is available 24/7 to assist you with any inquiries or issues you may have. You can reach us via email at",
+        "Müqavilə bağlandıqdan sonra, xüsusi icazə vərəqəsini anbarımızın girişində təqdim edərək, mallarınızla ərazimizə daxil olub müqavilədə qeyd olunan konteynerə yükləyə bilərsiniz. Malların yerləşdirilməsi və boşaldılması ya öz gücünüzlə, ya da əlavə ödəniş müqabilində bizim tərəfimizdən təqdim olunan işçi qüvvəsi və ya çəngəlli yükqaldırıcı vasitəsilə həyata keçirilir",
     },
     {
-      question: "How to contact with Customer Service?",
+      question: "Mallarımı günün hansı vaxtı götürə bilərəm?",
       answer:
-        "Our Customer Service team is available 24/7 to assist you with any inquiries or issues you may have. You can reach us via email at",
+        "Anbarımız hər gün 24 saat açıqdır. Lakin saat 23:00–08:00 arası daxil olmaq istəsəniz, 17:00-dan gec olmayaraq anbarımızın ofis heyətini (+994 55 444 12 12 / info@anbar.al) məlumatlandırmağınız xahiş olunur",
     },
     {
-      question: "How to contact with Customer Service?",
+      question: "Əraziyə nəqliyyat dexil ola bilər?",
       answer:
-        "Our Customer Service team is available 24/7 to assist you with any inquiries or issues you may have. You can reach us via email at",
+        "Bəli, minik avtomobillərdən tutmuş, tırlara qədər ərazimizdə hərəkət etmək mümkündür",
     },
     {
-      question: "How to contact with Customer Service?",
+      question: "Əraziyə giriş icazəsi necə alınır?",
       answer:
-        "Our Customer Service team is available 24/7 to assist you with any inquiries or issues you may have. You can reach us via email at",
+        "Müqavilə imzalandıqdan sonra, siz təyin etdiyiniz şəxslərin məlumatlarını ofis əməkdaşlarımıza təqdim edirsiniz. Bundan sonra, qısa zamanda sizə icazə vərəqələri təqdim edilir",
     },
   ];
 

@@ -7,25 +7,25 @@ export default function Advantages() {
     {
       icon: "/icons/adv/doc.svg",
       alt: "Doc icon",
-      ariaLabel: "Sərfəli şərtlərlə fərdi saxlama icon",
-      title: "Sərfəli şərtlərlə fərdi saxlama",
+      ariaLabel: "Sərfəli şərtlər icon",
+      title: "Sərfəli şərtlər",
       description:
-        "Həm ev əşyaları, həm sənaye malları, həm də şəxsi sənədlər üçün ideal mühitdir.",
+        "Hər müştərinin ehtiyacına uyğun təklifimiz var",
     },
     {
       icon: "/icons/adv/map.svg",
       alt: "Map icon",
-      ariaLabel: "Optimal yerləşmə və logistika icon",
-      title: "Optimal yerləşmə və logistika",
+      ariaLabel: "Optimal yerləşmə icon",
+      title: "Optimal yerləşmə",
       description:
-        "Anbarlarımızın yerləşdiyi məkan xüsusi olaraq əsas magistral yollara yaxınlıq nəzərə alınaraq seçilmişdir",
+        "Ən böyük ticarət mərkəzlərinin yaxınlığında və magistral yolun kənarında yerləşirik",
     },
     {
       icon: "/icons/adv/calenda.svg",
       alt: "Calendar icon",
-      ariaLabel: "Qısa müddətli və kiçik həcmli opsiyalar иконка",
-      title: "Qısa müddətli və kiçik həcmli opsiyalar",
-      description: "Əşyalarınız bizimlə tam sığortalıdır, siz rahat ola ",
+      ariaLabel: "Qısa müddətli opsiyalar icon",
+      title: "Qısa müddətli opsiyalar",
+      description: "Böyük həcmə ehtiyac olmayan və ya yalnız qısa müddət üçün saxlama həlləri axtaranlar üçün ideal seçim",
     },
     {
       icon: "/icons/adv/shield.svg",
@@ -33,7 +33,7 @@ export default function Advantages() {
       ariaLabel: "Sığorta icon",
       title: "Sığorta ",
       description:
-        "Əşyalarınızı bizə etibar etdikdə, onların yalnız fiziki olaraq deyil, həm də hüquqi olaraq qorunduğuna",
+        "Bütün konteynerlərdə saxlanılan mallar sığortalıdır",
     },
   ];
 

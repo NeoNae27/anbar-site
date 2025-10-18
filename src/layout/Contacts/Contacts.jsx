@@ -20,7 +20,7 @@ export default function Contacts() {
         </div>
         <section className="contacts__info">
           <div className="contacts__address">
-            <h4 className="contacts__info-title">Rəsmi Məlumatlar</h4>
+            <h4 className="contacts__info-title">Əlaqə</h4>
             <div className="info-element">
               <Image
                 src="/icons/addres.svg"
@@ -45,7 +45,7 @@ export default function Contacts() {
             </div>
           </div>
           <div className="contacts__address">
-            <h4 className="contacts__info-title">Open Hoursr</h4>
+            <h4 className="contacts__info-title">Open Hours</h4>
             <div className="info-element">
               <Image
                 src="/icons/time.svg"
