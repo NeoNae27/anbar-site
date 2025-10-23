@@ -15,13 +15,14 @@ export default function Banner() {
         <div className="banner__container-text">
           <h1>
             <span>
-              Kirayə Konteyner
+              Konteyner Anbarlar 
               <br />
-              Anbarlar
+              İcarəsi
             </span>
           </h1>
           <DefaultButton
             label="Əlaqə"
+            href="https://wa.me/message/GKTHBWSO45D5G1"
             size={"button-lg"}
             title="Əlaqə forması vasitəsilə bizimlə əlaqə saxlayın"
             aria-label="Bizimlə əlaqə saxlayın"

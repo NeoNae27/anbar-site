@@ -46,7 +46,7 @@ export default function FrequentlyQuestions() {
         </div>
         <aside
           className="FQ__image"
-          aria-label="Frequently Asked Questions illustration"
+          aria-label="Tez-tez verilən suallar"
         >
           <Image
             role="img"

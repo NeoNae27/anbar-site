@@ -27,7 +27,7 @@ export default function Question({ question, answer }) {
           role="region"
           aria-live="polite"
         >
-          <h4 className="question__answer-title">Cavab budur</h4>
+          <h4 className="question__answer-title">Cavab</h4>
           <dd><p className="question__answer-text body1">{answer}</p></dd>
         </div>
       )}

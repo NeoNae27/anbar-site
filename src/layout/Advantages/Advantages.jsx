@@ -7,10 +7,10 @@ export default function Advantages() {
     {
       icon: "/icons/adv/doc.svg",
       alt: "Doc icon",
-      ariaLabel: "Sərfəli şərtlər icon",
+      ariaLabel: "Obyekt kodu",
       title: "Sərfəli şərtlər",
       description:
-        "Hər müştərinin ehtiyacına uyğun təklifimiz var",
+        "Anbarınızın Dövlət Vergi Xidməti sitemində qeydiyyatı üçün obyekt kodu təqdim olunur",
     },
     {
       icon: "/icons/adv/map.svg",

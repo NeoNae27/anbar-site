@@ -8,6 +8,7 @@ import {
   Contacts,
   Footer,
 } from "@/layout/layout.js";
+import FloatingButton from "@/components/Button/FloatingButton/FloatingButton.jsx";
 import "./style.css";
 
 export default function Page() {
@@ -48,6 +49,7 @@ export default function Page() {
           __html: JSON.stringify(organizationSchema).replace(/</g, "\\u003c"),
         }}
       />
+      <FloatingButton href="https://wa.me/message/GKTHBWSO45D5G1"></FloatingButton>
       <Header></Header>
       <Banner></Banner>
       <About></About>
