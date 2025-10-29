@@ -8,7 +8,7 @@ export default function Advantages() {
       icon: "/icons/adv/doc.svg",
       alt: "Doc icon",
       ariaLabel: "Obyekt kodu",
-      title: "Sərfəli şərtlər",
+      title: "Obyekt kodu",
       description:
         "Anbarınızın Dövlət Vergi Xidməti sitemində qeydiyyatı üçün obyekt kodu təqdim olunur",
     },
@@ -42,6 +42,10 @@ export default function Advantages() {
       <div className="advantages__container">
         <header className="advantages__header">
           <h2 className="advantages__title">Üstünlüklərimiz</h2>
+          <p className="advantages__description body1">
+              Sizə rahat, etibarlı və sərfəli saxlama həlləri təqdim edən fərdi
+              konteyner anbarlarımızla xidmətinizdəyik!
+            </p>
         </header>
         <ul className="advantages__cards">
           {AdvantagesList.map((advantage) => (

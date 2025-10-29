@@ -38,7 +38,7 @@ export default function About() {
           </p>
         </article>
         <article className="about__userJourney" role="article">
-          <h4>Bu necə işləyir?</h4>
+          <h4>İcarə üçün addımlar</h4>
           <ul>
             {UserJourneySteps.map((step) => (
               <li key={step.id}>

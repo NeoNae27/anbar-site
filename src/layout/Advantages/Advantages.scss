@@ -32,7 +32,14 @@
     justify-content: space-between;
   }
 
+  &__description {
+    margin-top: 16px;
+    height: auto;
+    color: var(--color-gray-400);
+  }
+
   &__header {
+    
     @media (max-width: 652px) {
       padding: 64px 32px 0px 0px;
     }

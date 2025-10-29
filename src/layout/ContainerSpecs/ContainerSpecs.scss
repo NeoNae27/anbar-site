@@ -63,12 +63,9 @@
   }
 
   &__description {
-    color: var(--color-gray-400);
-  }
-
-  &__description {
     max-width: 579px;
     height: auto;
+    color: var(--color-gray-400);
   }
 
   &__cards {

@@ -5,7 +5,11 @@ import Image from "next/image";
 
 export default function Contacts() {
   return (
-    <section className="contacts" aria-labelledby="contacts-title" role="region">
+    <section
+      className="contacts"
+      aria-labelledby="contacts-title"
+      role="region"
+    >
       <div className="contacts__container">
         <div className="contacts__map">
           <iframe
@@ -46,7 +50,7 @@ export default function Contacts() {
           </div>
           <div className="contacts__address">
             <h4 className="contacts__info-title">Open Hours</h4>
-            <div className="info-element">
+            <div className="info-element__extra">
               <Image
                 src="/icons/time.svg"
                 alt="icon"
@@ -54,9 +58,12 @@ export default function Contacts() {
                 height={48}
                 unoptimized
               ></Image>
-              <time className="info-text body1">
-                Bazar ertəsi- Şənbə: 08:00 – 18:00
-              </time>
+              <span className="contacts__time">
+                <time className="info-text body1">
+                  Ofis: Bazar ertəsi-Cümə 08:00 - 17:00
+                </time>
+                <time className="info-text body1">Anbarlar: 24/7</time>
+              </span>
             </div>
           </div>
         </section>

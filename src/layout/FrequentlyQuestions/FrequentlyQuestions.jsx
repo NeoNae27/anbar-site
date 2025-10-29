@@ -32,7 +32,7 @@ export default function FrequentlyQuestions() {
       <div className="FQ__container">
         <div className="FQ__questions">
           <h2 id="fq-title" className="FQ__title">
-            Frequently Asked Questions
+            Tez-tez verilən suallar
           </h2>
           <dl className="FQ__questions-list" role="list">
             {Questions.map((item, index) => (
