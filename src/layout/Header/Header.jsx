@@ -1,15 +1,28 @@
+"use client";
 import Image from "next/image";
 import "./Header.scss";
+import { useEffect, useState } from "react";
 
 export default function Header({}) {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 60);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="header" role="banner">
-      <div className="header__container">
+    <header className={scrolled ? "header scrolled" : "header"} role="banner">
+      <div className={scrolled ? "header__container scrolled" : "header__container"}>
         <div className="header__logo">
           <Image
             src={"/logo/logo-text-color.svg"}
             alt="Anbar.al - konteyner anbarları icarəyə verilir"
-            width="100"
+            width="140"
             height="32"
             priority
             title="Anbar.al"

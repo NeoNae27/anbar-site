@@ -1,11 +1,20 @@
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   background-color: var(--color-first-100);
   align-items: center;
   justify-content: space-around;
   padding: 32px 80px;
   contain: layout style;
-  
+  transition: background 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
+
+  &.scrolled {
+    background-color: white;
+    padding: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
 
   @media (max-width: 652px) {
     padding: 24px 32px;
@@ -25,6 +34,11 @@
     border-radius: 16px;
     border: 2px var(--color-gray-200) solid;
     background-color: var(--color-base-white);
+
+    &.scrolled {
+      border-radius: 0;
+      border: none;
+    }
 
     @media (max-width: 652px) {
       justify-content: center;
