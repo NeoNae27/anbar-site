@@ -30,14 +30,16 @@
     justify-content: space-between;
     width: 100%;
     max-width: 1280px;
-    padding: 24px 80px;
+    padding: 24px 40px;
     border-radius: 16px;
     border: 2px var(--color-gray-200) solid;
     background-color: var(--color-base-white);
+    transition: padding 0.3s ease;
 
     &.scrolled {
       border-radius: 0;
       border: none;
+      padding: 24px 0px;
     }
 
     @media (max-width: 652px) {
