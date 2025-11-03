@@ -40,6 +40,10 @@
       border-radius: 0;
       border: none;
       padding: 24px 0px;
+
+      @media (max-width: 1280px) {
+        padding: 24px 80px;
+      }
     }
 
     @media (max-width: 652px) {
