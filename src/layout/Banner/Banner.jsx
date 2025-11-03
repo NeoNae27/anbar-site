@@ -15,7 +15,7 @@ export default function Banner() {
         <div className="banner__container-text">
           <h1>
             <span>
-              Konteyner Anbarlar 
+              Konteyner Anbarlar
               <br />
               İcarəsi
             </span>
@@ -34,7 +34,7 @@ export default function Banner() {
           aria-label="Konteyner anbarları"
         >
           <Image
-            src="/imgs/BannerContainersImgs/ContainersImg-Desktop.png"
+            src="/imgs/BannerContainersImgs/Old-Containers.png"
             alt="Containers"
             layout="fill"
             objectFit="cover"

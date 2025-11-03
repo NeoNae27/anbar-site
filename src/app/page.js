@@ -55,7 +55,7 @@ export default function Page() {
       <About></About>
       <Advantages></Advantages>
       <ContainerSpecs></ContainerSpecs>
-      <FrequentlyQuestions></FrequentlyQuestions>
+      {/* <FrequentlyQuestions></FrequentlyQuestions> */}
       <Contacts></Contacts>
       <Footer></Footer>
     </>

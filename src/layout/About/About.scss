@@ -4,18 +4,22 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding: 160px 120px;
+  padding: 160px 80px;
 
   @media (max-width: 1280px) {
-    padding: 128px 120px;
+    padding: 128px 80px;
   }
 
   @media (max-width: 652px) {
-    padding: 128px 72px;
+    padding: 128px 32px;
   }
 
   @media (width < 652px) {
     padding: 64px 32px;
+  }
+
+  &__questions {
+    // max-width: 500px;
   }
 
   &__container {
@@ -23,20 +27,17 @@
     width: 100%;
     max-width: 1280px;
     flex-direction: row;
-    padding: 0px 80px;
+    padding: 0px;
+    gap: 80px;
     justify-content: space-between;
 
     @media (width < 1440px) {
       padding: 0px;
     }
 
-    @media (width < 1280px) {
-      flex-direction: column;
+    @media (max-width: 1280px) {
+      flex-direction: column-reverse;
       gap: 64px;
-    }
-
-    p {
-      color: var(--color-gray-400);
     }
 
     h4 {
@@ -45,8 +46,24 @@
   }
 
   &__description {
-    @media (width >= 1280px) {
-      width: 500px;
+    display: flex;
+    flex-direction: column;
+    p {
+      color: var(--color-gray-400);
+    }
+
+    @media (max-width: 1280px) {
+      width: 100%;
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      @media (max-width: 1280px) {
+        flex-direction: column;
+      }
     }
   }
 
