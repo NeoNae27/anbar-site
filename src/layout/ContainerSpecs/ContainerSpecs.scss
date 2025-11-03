@@ -36,7 +36,8 @@
   }
 
   &__image-wrapper {
-    width: 100%;
+    width: 50%;
+    max-width: 624px;
 
     img {
       width: 100%;
@@ -44,16 +45,31 @@
       object-fit: contain;
     }
 
+    @media (max-width: 1280px) {
+      max-width: 548px;
+    }
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      max-width: 100%;
+    }
+
     @media (width < 652px) {
-    padding-right: 32px;
+      padding-right: 32px;
     }
   }
 
   &__text {
     display: flex;
+    width: 50%;
     flex-direction: column;
     justify-content: space-between;
     gap: 32px;
+
+    @media (max-width: 1024px) {
+      max-width: 100%;
+      width: 100%;
+    }
   }
 
   &__header {
