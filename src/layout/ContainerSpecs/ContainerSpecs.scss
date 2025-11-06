@@ -15,12 +15,12 @@
     padding: 32px 32px 64px;
   }
 
-  @media (width < 652px) {
-    padding: 0px;
-    padding-left: 32px;
-    gap: 0px;
-    padding-bottom: 32px;
-  }
+  // @media (width < 652px) {
+  //   padding: 0px;
+  //   padding-left: 32px;
+  //   gap: 0px;
+  //   padding-bottom: 32px;
+  // }
 
   &__container {
     display: flex;
@@ -54,9 +54,9 @@
       max-width: 100%;
     }
 
-    @media (width < 652px) {
-      padding-right: 32px;
-    }
+    // @media (width < 652px) {
+    //   padding-right: 32px;
+    // }
   }
 
   &__text {
@@ -67,7 +67,6 @@
     gap: 32px;
 
     @media (max-width: 1024px) {
-      max-width: 100%;
       width: 100%;
     }
   }
