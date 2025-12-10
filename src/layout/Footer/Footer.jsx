@@ -13,7 +13,6 @@ export default function Footer() {
           unoptimized
         ></Image>
 
-        <p className="subtitle1">Made by 27 Studio</p>
       </div>
     </footer>
   );
