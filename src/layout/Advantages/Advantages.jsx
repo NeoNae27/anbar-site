@@ -7,16 +7,16 @@ export default function Advantages() {
     {
       icon: "/icons/adv/doc.svg",
       alt: "Doc icon",
-      ariaLabel: "Obyekt kodu",
-      title: "Obyekt kodu",
+      ariaLabel: "Sərfəli Şərtlərlə \n Fərdi Saxlama",
+      title: "Sərfəli Şərtlərlə \n Fərdi Saxlama",
       description:
         "Anbarınızın Dövlət Vergi Xidməti sitemində qeydiyyatı üçün obyekt kodu təqdim olunur",
     },
     {
       icon: "/icons/adv/map.svg",
-      alt: "Map icon",
-      ariaLabel: "Optimal yerləşmə icon",
-      title: "Optimal yerləşmə",
+      alt: "Video icon",
+      ariaLabel: "Optimal Yerləşmə və Logistika",
+      title: "Optimal Yerləşmə və Logistika",
       description:
         "Ən böyük ticarət mərkəzlərinin yaxınlığında və magistral yolun kənarında yerləşirik",
     },
@@ -24,7 +24,7 @@ export default function Advantages() {
       icon: "/icons/adv/calenda.svg",
       alt: "Calendar icon",
       ariaLabel: "Qısa müddətli opsiyalar icon",
-      title: "Qısa müddətli opsiyalar",
+      title: "Qısa müddətli və kiçik həcmli opsiyalar",
       description: "Böyük həcmə ehtiyac olmayan və ya yalnız qısa müddət üçün saxlama həlləri axtaranlar üçün ideal seçim",
     },
     {
