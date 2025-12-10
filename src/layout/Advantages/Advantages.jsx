@@ -36,7 +36,7 @@ export default function Advantages() {
         "Bütün konteynerlərdə saxlanılan mallar sığortalıdır",
     },
     {
-      icon: "/icons/container/camera.svg",
+      icon: "/icons/adv/camera.svg",
       alt: "Camera icon",
       ariaLabel: "24/7 \n Mühafizə icon",
       title: `24/7 \n Mühafizə`,
@@ -44,7 +44,7 @@ export default function Advantages() {
         "Konteynerlərin hər biri daimi təhlükəsizlik kameraları və mühafizə ilə müşahidə olunur",
     },
     {
-      icon: "/icons/container/fire.svg",
+      icon: "/icons/adv/fire.svg",
       alt: "Map icon",
       ariaLabel: "Yanğın Təhlükəsizliyi icon",
       title: "Yanğın Təhlükəsizliyi",
@@ -52,7 +52,7 @@ export default function Advantages() {
         "Konteynerlərin hər biri yanğın detektoru ilə təchiz olunub",
     },
     {
-      icon: "/icons/container/bulb.svg",
+      icon: "/icons/adv/bulb.svg",
       alt: "Bulb icon",
       ariaLabel: "İşıqlandırma və Elektrik Təchizatı icon",
       title: "İşıqlandırma və Elektrik Təchizatı",
@@ -60,7 +60,7 @@ export default function Advantages() {
         "Hər konteynerin öz işıqlandırması və elektrik yuvası mövcuddur",
     },
     {
-      icon: "/icons/container/rain.svg",
+      icon: "/icons/adv/rain.svg",
       alt: "Rain icon",
       ariaLabel: "Nəmişliyə və Temperaturaya Qarşı İzolyasiya icon",
       title: "Nəmişliyə və Temperaturaya Qarşı İzolyasiya",

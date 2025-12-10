@@ -57,12 +57,21 @@ export default function ContainerSpecs() {
         <span className="CS__text">
           <header className="CS__header">
             <h4 className="CS__title">Konteynerlərin xüsusiyyətləri</h4>
-            <p className="CS__description body1">
+            <p className="CS__description subtitle1">
               Sizə rahat, etibarlı və sərfəli saxlama həlləri təqdim edən fərdi
               konteyner anbarlarımızla xidmətinizdəyik!
             </p>
           </header>
-
+          <article className="CS__specs body1">
+            <p>The container shown in the image has the following characteristics:</p>
+            <br />
+            <ul>
+              <li>Length: 12 meters</li>
+              <li>Width: 2.4 meters</li>
+              <li>Height: 2.9 meters</li>
+              <li>Floor area: 30 square meters</li>
+            </ul>
+          </article>
           {/* <span className="CS__cards">
             {ContainerSpecList.map((spec) => (
               <SmallCard

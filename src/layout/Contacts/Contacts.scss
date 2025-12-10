@@ -1,6 +1,6 @@
 .contacts {
   display: flex;
-  background-color: var(--color-first-100);
+  background-color: var(--color-second-500);
   padding: 80px;
   flex-direction: column;
   justify-content: center;
@@ -19,8 +19,8 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    gap: 80px;
-    max-width: 1280px;
+    gap: 32px;
+    max-width: 1360px;
     justify-content: space-between;
 
     // @media (max-width: 1024px) {
@@ -29,6 +29,7 @@
 
     @media (max-width: 652px) {
       flex-direction: column-reverse;
+      padding: 0px;
     }
   }
 
@@ -40,9 +41,11 @@
 
   &__map {
     width: 50%;
+    max-width: 624px;
 
     iframe {
-      border: 0;
+      width: 100%;
+      object-fit: contain;
       border-radius: 8px;
     }
 
@@ -57,6 +60,10 @@
     flex-direction: column;
     gap: 40px;
     width: 50%;
+
+    &-title {
+      color: var(--color-base-white);
+    }
 
     @media (width < 1024px) {
       width: 100%;
@@ -76,7 +83,7 @@
       max-width: 300px;
       gap: 16px;
       align-items: center;
-      color: var(--color-gray-400);
+      color: var(--color-first-200);
 
       &__extra {
         display: flex;
@@ -84,7 +91,7 @@
         max-width: 300px;
         gap: 16px;
         align-items: flex-start;
-        color: var(--color-gray-400);
+        color: var(--color-first-200);
       }
     }
   }

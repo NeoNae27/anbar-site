@@ -4,15 +4,15 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding: 40px 80px 80px 80px;
-  background-color: var(--color-first-100);
+  padding: 160px 80px;
+  background-color: var(--color-base-white);
 
   @media (max-width: 1280px) {
-    padding: 32px 80px;
+    padding: 128px 80px;
   }
 
   @media (max-width: 652px) {
-    padding: 32px 32px 64px;
+    padding: 64px 32px;
   }
 
   // @media (width < 652px) {
@@ -25,7 +25,7 @@
   &__container {
     display: flex;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1360px;
     flex-direction: row;
     gap: 32px;
     justify-content: space-between;
@@ -63,8 +63,17 @@
     display: flex;
     width: 50%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 32px;
+
+    p, li {
+      color: var(--color-gray-400);
+      list-style: disc;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
 
     @media (max-width: 1024px) {
       width: 100%;
@@ -80,7 +89,10 @@
   &__description {
     max-width: 579px;
     height: auto;
-    color: var(--color-gray-400);
+  }
+
+  &__title {
+    color: var(--color-gray-700);
   }
 
   &__cards {
