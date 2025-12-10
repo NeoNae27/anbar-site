@@ -1,9 +1,14 @@
 "use client";
+import { useState } from "react";
 import "./About.scss";
+import Image from "next/image";
+
 import UserJourney from "@/components/UserJourney/UserJourney.jsx";
 import Question from "@/components/Questions/Question.jsx";
 
 export default function About() {
+  const [activeTab, setActiveTab] = useState("about");
+
   const Questions = [
     {
       question: "Mallar necə konteynerə yerləşdirilir və boşaldılır?",
@@ -26,38 +31,142 @@ export default function About() {
         "Müqavilə imzalandıqdan sonra, siz təyin etdiyiniz şəxslərin məlumatlarını ofis əməkdaşlarımıza təqdim edirsiniz. Bundan sonra, qısa zamanda sizə icazə vərəqələri təqdim edilir",
     },
   ];
+
+  const tabs = [
+    { id: "about", label: "BİZ KİMİK?", img: "/imgs/value.png" },
+    {
+      id: "values",
+      label: "DƏYƏRLƏRİMİZ VƏ ÜSTÜNLÜKLƏRİMİZ",
+      img: "/imgs/shuttle.png",
+    },
+    { id: "mission", label: "MƏQSƏDİMİZ", img: "/imgs/target.png" },
+  ];
+
+  const content = {
+    about:
+      "Sizə rahat, etibarlı və sərfəli saxlama həlləri təqdim edən fərdi konteyner anbarlarımızla xidmətinizdəyik! Əsas magistral yollara çıxışı olan ideal yerləşməmiz və müasir logistika imkanlarımızsayəsində sizin üçün maksimum əlverişli şərait yaradırıq.",
+    values: "Контент о ценностях...",
+    mission:
+      "Bizim əsas məqsədimiz sizə etibarlı və sərfəli saxlama imkanları təqdim edərək əşyalarınızı təhlükəsiz şəraitdə qorumaqdır. Bizimlə əlaqə saxlayın və sizin üçün ən uyğun saxlama həllini birlikdə seçək!",
+  };
+
+  const features = [
+    {
+      title: "Optimal yerləşmə və logistika",
+      description:
+        "Anbarlarımız əlverişli məkanda yerləşir və rahat giriş-çıxış imkanı təqdim edir.",
+    },
+    {
+      title: "Sərfəli şərtlərlə fardi saxlama",
+      description: "83.5 m³ həcmində individual, qapılı saxlanc yerleri.",
+    },
+    {
+      title: "24/7 mühafiza",
+      description:
+        "Təhlükəsizlik bizim üçün prioritetdir. Anbarlarımız tam nazarət altındadır.",
+    },
+    {
+      title: "Yangın təhlükəsizliyi",
+      description:
+        "Təhlükəsizlik standartlarına tam cavab verən yangın aleyhinə sistemlər.",
+    },
+    {
+      title: "Sığorta",
+      description:
+        "Əşyalarınız bizimləə tam sığortalıdır, siz rahat ola bilərsiniz.",
+    },
+    {
+      title: "Nemişlik və temperatur izolvasiyası",
+      description: "Mallarınız üçün optimal saxlama şəraiti təmin edilir.",
+    },
+    {
+      title: "Ferdi işıqlandırma və elektrik tachizatı",
+      description: "Rahat istifadə üçün bütün lazımi şərait yaradılıb.",
+    },
+    {
+      title: "Qısa müddətli və kiçik həcmli opsiyalar",
+      description: "Ehtiyaclarınıza uyğun çevik həllər təklif edirk.",
+    },
+  ];
+
   return (
     <section className="about" aria-labelledby="about-title" role="landmark">
       <div className="about__container">
-        <article className="about__questions" role="article">
-          <h4>Tez-tez verilən suallar</h4>
-          <dl className="FQ__questions-list" role="list">
-            {Questions.map((item, index) => (
-              <Question
-                key={index}
-                question={item.question}
-                answer={item.answer}
-              />
-            ))}
-          </dl>
-        </article>
         <article className="about__description" role="article">
-          <h4>Biz kimik?</h4>
+          <hr></hr>
+          <h4>Haqqımızda</h4>
+          <div>
+            <div className="about__tabs">
+              {tabs.map((tab) => (
+                <button
+                  key={tab.id}
+                  className={`tab ${
+                    activeTab === tab.id ? "active" : ""
+                  } subtitle1`}
+                  onClick={() => setActiveTab(tab.id)}
+                >
+                  <Image
+                    unoptimized
+                    src={tab.img}
+                    alt={tab.label}
+                    width={16}
+                    height={16}
+                  ></Image>
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+
+            <div className="tab-content body1">
+              {activeTab === "about" && (
+                <p>
+                  Sizə rahat, etibarlı və sərfəli saxlama həlləri təqdim edən
+                  fərdi konteyner anbarlarımızla xidmətinizdəyik! Əsas magistral
+                  yollara çıxışı olan ideal yerləşməmiz və müasir logistika
+                  imkanlarımız sayəsində sizin üçün maksimum əlverişli şərait
+                  yaradırıq.
+                </p>
+              )}
+
+              {activeTab === "values" && (
+                <ul className="features-list ">
+                  {features.map((feature, index) => (
+                    <li key={index}>
+                      <p className="body1">
+                        <strong>{feature.title}</strong> – {feature.description}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              )}
+
+              {activeTab === "mission" && (
+                <p>
+                  Bizim əsas məqsədimiz sizə etibarlı və sərfəli saxlama
+                  imkanları təqdim edərək əşyalarınızı təhlükəsiz şəraitdə
+                  qorumaqdır. Bizimlə əlaqə saxlayın və sizin üçün ən uyğun
+                  saxlama həllini birlikdə seçək!
+                </p>
+              )}
+            </div>
+            <Image
+              className="image-wrapper"
+              unoptimized
+              width={400}
+              height={250}
+              style={{ width: "100%", height: "auto" }}
+              src="/imgs/banner_2_2.webp"
+              alt="Container Image"
+            ></Image>
+          </div>
+
           <div className="about__description-text">
-            <p className="body1">
-              Biz magistral yolun kənarında və şəhərin ən böyük ticarət
-              mərkəzlərinin yaxınlığında yerləşən müasir konteyner anbar xidməti
-              təqdim edirik. Müştərilərimizə rahat, etibarlı və sərfəli saxlama
-              həlləri təklif edərək, əşyalarınız üçün təhlükəsiz və əlverişli
-              mühit yaradırıq
-            </p>
-            <br />
-            <p className="body1">
-              Bizim əsas məqsədimiz sizə etibarlı və sərfəli saxlama imkanları
-              təqdim edərək əşyalarınızı təhlükəsiz şəraitdə qorumaqdır. Bizimlə
-              əlaqə saxlayın və sizin üçün ən uyğun saxlama həllini birlikdə
-              seçək!
-            </p>
+            {/* <p className="body1">
+              Sizə rahat, etibarlı və sərfəli saxlama həlləri təqdim edən fərdi
+              konteyner anbarlarımızla xidmətinizdəyik! Əsas magistral yollara
+              çıxışı olan ideal yerləşməmiz və müasir logistika imkanlarımız
+              sayəsində sizin üçün maksimum əlverişli şərait yaradırıq.
+            </p> */}
           </div>
         </article>
       </div>
